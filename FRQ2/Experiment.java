@@ -3,9 +3,9 @@ class Person {
     private String[] family;
     private String name;
 
-    //returns the person's list of family members
-    public String[] getFamily(){
-        return family;
+    //returns whether or not a name is found in the list of family members
+    public boolean isFamilyMember(String name){
+        // code not shown
     }
 
     //returns the name of the person
@@ -19,13 +19,13 @@ class Person {
 
 class Experiment {
 
-    private Person[] subjects;
-
     //constructor not shown
 
     //Part A
     //Returns a random person from a list of people part of the experiment
-    public Person randomSelect(Person[] people){
+    //Precondition : i and j are valid indexes and i < j.
+    //Param i : starting index, Param j : final index
+    public Person randomSelect(Person[] people, int i, int j){
         // write your code
     }
 
@@ -37,10 +37,9 @@ class Experiment {
     }
 
     //Part C
-    //Assume the [subjects] list has been instantiated
     //Returns true when potential bias exists
     //Bias will exist when a family member is found within the the same experiment as any of the subjects
-    public boolean containsBias(Person[] otherGroup){
+    public boolean containsBias(Person[] group){
         // write your code
     }
 
