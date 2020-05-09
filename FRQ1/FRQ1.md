@@ -99,7 +99,7 @@ Examples :
 ## Part C ascending()
 
 This method checks whether a list of Time objects are in ascending order.
-**You must use compareTime() method correctly to get credit, Assume that compareTime() works as intended regardless of your code in Part A**
+**You must use compareTime() method correctly to get full credit, assume that compareTime() works as intended regardless of your code in Part A**
 
 ```java
     private ArrayList<Time> times;
@@ -126,7 +126,7 @@ Examples :
 ## Part D averageTimeDifference()
 
 This method will return the average difference (in minutes) between each consecutive pair of time.
-**You must use getMinutes() method correctly to get credit, Assume that getMinutes works as intended regardless of your code in Part B**
+**You must use getMinutes() method correctly to get full credit, assume that getMinutes works as intended regardless of your code in Part B**
 
 ```java
     //Part D averageTimeDifference method
