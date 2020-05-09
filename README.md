@@ -124,12 +124,10 @@ Examples :
 ## Part D
 
 This method will return the average difference (in minutes) between each consecutive pair of time.
-When the list of Time is not in ascending order, return the difference in time between the first and last Time
 
 ```java
     //Part D averageTimeDifference method
     //Returns the average time difference of all consecutive time pairs
-    //if times is not ascending, find the difference in minutes between the first and last time in the list
     public double averageTimeDifference(){
         //write your code
     }
@@ -140,4 +138,4 @@ Examples :
 | list of times         | Return        |
 |:-------------:        | :------------:|
 |2:30, 3:20, 3:49, 4:34 | 41.333333...  |
-|1:32, 2:22, 2:15, 9:45 | 493.0         |
+|1:32, 2:22, 2:15, 9:45 | 169.0         |
