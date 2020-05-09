@@ -48,8 +48,7 @@ class Clock {
 
     //Part D averageTimeDifference method
     //Returns the average time difference of all consecutive time pairs
-    //if times is not ascending, find the difference in minutes between the first and last time in the list
-    public int averageTimeDifference(){
+    public double averageTimeDifference(){
         //write your code
     }
 }
