@@ -31,7 +31,7 @@ class Experiment {
 
     //Part B
     //Return a list of randomly selected people from every 5 people sub group from a larger group
-    //Preconditions : group contains more than 5 people (Person objects)
+    //Preconditions : group contains more than 5 people (Person objects) and group size is a multiple of 5
     public Person[] randomGroup(Person[] group){
         // write your code
     }
