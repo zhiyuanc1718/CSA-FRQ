@@ -96,4 +96,4 @@ This method checks whether another list of subjects contains family members of a
     }
 ```
 
-For example : if a group contains a person name "Joe D" who has a family member named "John D" and who happens to be found in the  list of subjects, the method will return true. If all subjects are not related across the group, the method will return false.
+For example : if a group contains a person name "Joe D" who has a family member named "John D" and who happens to be found in the group, the method will return true. If all subjects are not related across the group, the method will return false.
