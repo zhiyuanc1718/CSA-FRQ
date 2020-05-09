@@ -42,14 +42,16 @@ class Clock {
     //assume for the following that times is instantiated and has at least a pair of time
 
     //Part C ascending method
-    //Returns true if all time in times are placed in ascending order
+    //Returns true if all time in times are placed in ascending order (each subsequent time is GREATER than the previous)
     //Returns false otherwise
     public boolean ascending(){
         //write your code
     }
 
     //Part D averageTimeDifference method
-    //Returns the average time difference of all consecutive time pairs
+    //Find the difference in time between each consecutive Time objects in the [times] list
+    //Total the differences and find the average across all pairs.
+    //Returns the average time difference of all time pairs
     public double averageTimeDifference(){
         //write your code
     }
@@ -109,7 +111,7 @@ This method checks whether a list of Time objects are in ascending order.
     //assume for the following that times is instantiated and has at least a pair of time
 
     //Part C ascending method
-    //Returns true if all time in times are placed in ascending order
+    //Returns true if all time in times are placed in ascending order (each subsequent time is GREATER than the previous)
     //Returns false otherwise
     public boolean ascending(){
         //write your code
@@ -130,7 +132,9 @@ This method will return the average difference (in minutes) between each consecu
 
 ```java
     //Part D averageTimeDifference method
-    //Returns the average time difference of all consecutive time pairs
+    //Find the difference in time between each consecutive Time objects in the [times] list
+    //Total the differences and find the average across all pairs.
+    //Returns the average time difference of all time pairs
     public double averageTimeDifference(){
         //write your code
     }
@@ -140,5 +144,5 @@ Examples :
 
 | list of times         | Return        |
 |:-------------:        | :------------:|
-|2:30, 3:20, 3:49, 4:34 | 41.333333...  |
-|1:32, 2:22, 2:15, 9:45 | 169.0         |
+|2:30, 3:30, 4:30, 5:30 | 60.0          |
+|1:30, 2:30, 4:30, 9:30 | 160.0         |

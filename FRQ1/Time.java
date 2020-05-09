@@ -36,14 +36,16 @@ class Clock {
     //assume for the following that times is instantiated and has at least a pair of time
 
     //Part C ascending method
-    //Returns true if all time in times are placed in ascending order
+    //Returns true if all time in times are placed in ascending order (each subsequent time is GREATER than the previous)
     //Returns false otherwise
     public boolean ascending(){
         //write your code
     }
 
     //Part D averageTimeDifference method
-    //Returns the average time difference of all consecutive time pairs
+    //Find the difference in time between each consecutive Time objects in the [times] list
+    //Total the differences and find the average across all pairs.
+    //Returns the average time difference of all time pairs
     public double averageTimeDifference(){
         //write your code
     }
