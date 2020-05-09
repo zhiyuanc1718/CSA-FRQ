@@ -1,6 +1,8 @@
 
 # FRQ Practice
 
+The following code can be found in Time.java file. Read through the comments and examples below.
+
 ```java
 class Time {
 
