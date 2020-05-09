@@ -1,5 +1,5 @@
 
-## FRQ (Self-Made) Practice
+# FRQ Practice
 
 ```java
 class Time {
