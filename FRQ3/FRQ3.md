@@ -1,5 +1,5 @@
 
-# FRQ #2 Practice
+# FRQ #3 Practice
 
 The following code can be found in [Calculus.java](./Calculus.java) file. Read through the comments and examples below.
 
