@@ -3,8 +3,10 @@ class Calculus {
     //constructor not shown
 
     //Part A leftSum
-    //Returns the area by adding the product of the corresponding y value of the very first x value in every subgroup times by the difference in x value between the first x and last x value in the subgroup. Assume that the list of x-values is strictly ascending.
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Returns the area by adding the product of the corresponding y value of the very first x value in every subgroup times by
+    //the difference in x value between the first x and last x value in the subgroup.
+    //Assume that the list of x-values is strictly ascending.
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups
@@ -13,8 +15,10 @@ class Calculus {
     }
 
     //Part B rightSum
-    //Returns the area by adding the product of corresponding y value of the last x value in every subgroup times by the difference in x value between the first x and last x value in the subgroup. Assume that the list of x-values is strictly ascending.
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Returns the area by adding the product of corresponding y value of the last x value in every subgroup times by the
+    //difference in x value between the first x and last x value in the subgroup.
+    //Assume that the list of x-values is strictly ascending.
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups
@@ -26,7 +30,7 @@ class Calculus {
     //Returns -1 when the average of the two sum outputs is less than the actual area
     //Returns 0 when the average of the two sum outputs is equal to the actual area
     //Returns 1 when the average of the two sum outputs is greater than the actual area
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups

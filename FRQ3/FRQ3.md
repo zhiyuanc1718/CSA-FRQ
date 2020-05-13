@@ -11,8 +11,10 @@ class Calculus {
     //constructor not shown
 
     //Part A leftSum
-    //Returns the area by adding the product of the corresponding y value of the very first x value in every subgroup times by the difference in x value between the first x and last x value in the subgroup. Assume that the list of x-values is strictly ascending.
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Returns the area by adding the product of the corresponding y value of the very first x value in every subgroup times by
+    //the difference in x value between the first x and last x value in the subgroup.
+    //Assume that the list of x-values is strictly ascending.
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups
@@ -21,8 +23,10 @@ class Calculus {
     }
 
     //Part B rightSum
-    //Returns the area by adding the product of corresponding y value of the last x value in every subgroup times by the difference in x value between the first x and last x value in the subgroup. Assume that the list of x-values is strictly ascending.
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Returns the area by adding the product of corresponding y value of the last x value in every subgroup times by the
+    //difference in x value between the first x and last x value in the subgroup.
+    //Assume that the list of x-values is strictly ascending.
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups
@@ -34,7 +38,7 @@ class Calculus {
     //Returns -1 when the average of the two sum outputs is less than the actual area
     //Returns 0 when the average of the two sum outputs is equal to the actual area
     //Returns 1 when the average of the two sum outputs is greater than the actual area
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups
@@ -52,8 +56,10 @@ The left riemann sum finds the sum of the area of rectangles with heights corres
 
 ```java
     //Part A leftSum
-    //Returns the area by adding the product of the corresponding y value of the very first x value in every subgroup times by the difference in x value between the first x and last x value in the subgroup. Assume that the list of x-values is strictly ascending.
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Returns the area by adding the product of the corresponding y value of the very first x value in every subgroup times by
+    //the difference in x value between the first x and last x value in the subgroup.
+    //Assume that the list of x-values is strictly ascending.
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups
@@ -65,9 +71,9 @@ The left riemann sum finds the sum of the area of rectangles with heights corres
 For example :
 
 | x values      | y values      | subdiv  | divided x groups    | divided y groups  | first y values times change in x| Return|
-|:-------------:| :------------:| :-----: |   :------:          | :-----: | :----:|
-|1,3,4,5,7,8    | 2,3,-4,5,8,10 | 2       | (1,3,4) and (5,7,8) | (2,3,-4) and (5,8,10) |   `2*3 + 5*3` = 21| 21.0|
-|3,4,5,6,8,12   | 1,10,20,4,6,-10 | 2     | (3,4,5) and (6,8,12)| (1,10,20) and (4,6,-10) | `1*2 + 4*6` = 26| 26.0|
+|:-------------:| :------------:| :-----: |   :------:          | :-----:           | :----:|  :----- |
+|1,3,4,5,7      | 2,3,-4,5,8        | 2 | (1,3,4) and (4,5,7)   | (2,3,-4) and (-4,5,8) |   `2*3 + -4*3` | -6.0|
+|3,4,5,6,8,12,14| 1,10,20,4,6,-10,15| 3 | (3,4,5), (5,6,8) and (8,12,14) | (1,10,20), (20,4,6) and (6,-10,15) |`1*2 + 20*3 + 6*6` | 98.0|
 
 
 ## Part B rightSum
@@ -76,8 +82,10 @@ The right riemann sum finds the sum of the area of rectangles with heights corre
 
 ```java
     //Part B rightSum
-    //Returns the area by adding the product of corresponding y value of the last x value in every subgroup times by the difference in x value between the first x and last x value in the subgroup. Assume that the list of x-values is strictly ascending.
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Returns the area by adding the product of corresponding y value of the last x value in every subgroup times by the
+    //difference in x value between the first x and last x value in the subgroup.
+    //Assume that the list of x-values is strictly ascending.
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups
@@ -88,10 +96,10 @@ The right riemann sum finds the sum of the area of rectangles with heights corre
 
 For example : (with the same values as the previous example)
 
-| x values      | y values      | subdiv  | divided x groups    | divided y groups  | last y values times change in x| return|
-|:-------------:| :------------:| :-----: |   :------:          | :-----: | :----:|
-|1,3,4,5,7,8    | 2,3,-4,5,8,10 | 2       | (1,3,4) and (5,7,8) | (2,3,-4) and (5,8,10) |   `-4*3 + 10*3` = 18| 18.0|
-|3,4,5,6,8,12   | 1,10,20,4,6,-10 | 2     | (3,4,5) and (6,8,12)| (1,10,20) and (4,6,-10) | `20*2 + -10*6` = -20| -20.0|
+| x values      | y values      | subdiv  | divided x groups    | divided y groups  | last y values times change in x| Return|
+|:-------------:| :------------:| :-----: |   :------:          | :-----:           | :----:|  :----- |
+|1,3,4,5,7      | 2,3,-4,5,8        | 2 | (1,3,4) and (4,5,7)   | (2,3,-4) and (-4,5,8) |   `-4*3 + 8*3` | 12.0|
+|3,4,5,6,8,12,14| 1,10,20,4,6,-10,15| 3 | (3,4,5), (5,6,8) and (8,12,14) | (1,10,20), (20,4,6) and (6,-10,15) |`20*2 + 6*3 + 15*6` | 148.0|
 
 
 ## Part C verifySum
@@ -104,7 +112,7 @@ This method compares the actual area to the average of the areas computed by lef
     //Returns -1 when the average of the two sum outputs is less than the actual area
     //Returns 0 when the average of the two sum outputs is equal to the actual area
     //Returns 1 when the average of the two sum outputs is greater than the actual area
-    //Precondition : x and y have equal lengths, x.length is divisible by subdiv
+    //Precondition : x and y have equal lengths, x.length - 1 is divisible by subdiv
     //Param x : the list of x values
     //Param y : the list of y values with respect to each x value
     //Param subdiv : the number of subdivisions, dividing the x values into subgroups
